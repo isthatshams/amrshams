@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "694922258443",
+    "project_id": "shams-522f7",
+    "storage_bucket": "shams-522f7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694922258443:android:b4ff2e386206c5fb42bf0e",
+        "android_client_info": {
+          "package_name": "com.examp.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAMdm8W9QOzA7-btGlINFkxK6ZfZGAPDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
