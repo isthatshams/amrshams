@@ -115,19 +115,19 @@ class _SignUpState extends State<SignUp> {
                 const SizedBox(height: 20.0),
                 ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all(Colors.redAccent),
-                    padding: MaterialStateProperty.all(
+                    backgroundColor: WidgetStateProperty.all(Colors.redAccent),
+                    padding: WidgetStateProperty.all(
                       const EdgeInsets.symmetric(
                           horizontal: 50.0, vertical: 10.0),
                     ),
-                    shape: MaterialStateProperty.all(
+                    shape: WidgetStateProperty.all(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15.0),
                       ),
                     ),
                   ),
                   onPressed: () async {
+                    print("Sign Up button pressed");
                     await _signUp();
                   },
                   child: SizedBox(
@@ -156,9 +156,9 @@ class _SignUpState extends State<SignUp> {
                   MaterialPageRoute(builder: (context) => const SignIn()),
                 );
               },
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     'Have an account?',
                     style: TextStyle(color: Colors.black, fontSize: 20),

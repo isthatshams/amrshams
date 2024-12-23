@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 
 class ChatScreen extends StatefulWidget {
-  const ChatScreen({Key? key}) : super(key: key);
+  const ChatScreen({super.key});
 
   @override
   _ChatScreenState createState() => _ChatScreenState();
@@ -13,7 +13,7 @@ class _ChatScreenState extends State<ChatScreen> {
   final _messageController = TextEditingController();
   final DatabaseReference _messagesRef =
       FirebaseDatabase.instance.ref().child('messages');
-  List<Map<String, dynamic>> _messages = [];
+  final List<Map<String, dynamic>> _messages = [];
 
   @override
   void initState() {
